@@ -40,7 +40,7 @@ class BasePizza extends Pizza
 abstract class Decorator extends Pizza {}
 
 /**
- * Concrete Decorator
+ * Concrete Decorator #1
  */
 class Salami extends Decorator
 {
@@ -62,7 +62,7 @@ class Salami extends Decorator
 }
 
 /**
- * Concrete Decorator
+ * Concrete Decorator #2
  */
 class Jalapeno extends Decorator
 {
