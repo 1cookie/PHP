@@ -1,4 +1,4 @@
 # PHP
-A repository for PHP artifacts
+## A repository for PHP artifacts
 
-## Browse individual branches for ideas
+Browse individual branches for ideas
