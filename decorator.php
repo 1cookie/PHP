@@ -1,6 +1,7 @@
 <?php
-
-
+/**
+ * Component
+ */
 abstract class Pizza
 {
     protected $data;
@@ -11,6 +12,9 @@ abstract class Pizza
     abstract public function getValue();
 }
 
+/**
+ * Concrete Component
+ */
 class BasePizza extends Pizza
 {
     public function __construct()
@@ -30,11 +34,14 @@ class BasePizza extends Pizza
     }
 }
 
-abstract class Decorator extends Pizza
-{
+/**
+ * Decorator
+ */
+abstract class Decorator extends Pizza {}
 
-}
-
+/**
+ * Concrete Decorator
+ */
 class Salami extends Decorator
 {
     public function __construct(Pizza $data)
@@ -54,6 +61,9 @@ class Salami extends Decorator
     }
 }
 
+/**
+ * Concrete Decorator
+ */
 class Jalapeno extends Decorator
 {
     public function __construct(Pizza $data)
@@ -73,6 +83,9 @@ class Jalapeno extends Decorator
     }
 }
 
+/**
+ * Userland
+ */
 class Client
 {
     private $pizza;
@@ -100,5 +113,4 @@ class Client
 
 $client = new Client();
 $client->getOrder();
-
 
